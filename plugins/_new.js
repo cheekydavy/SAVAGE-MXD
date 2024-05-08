@@ -20,7 +20,7 @@ let {
     filename: __filename,
   },
   async (message) => {
-    const channelMessage = `𝐖𝐀𝐒𝐈 𝐓𝐄𝐂𝐇 𝐎𝐅𝐅𝐈𝐂𝐀𝐋 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐂𝐇𝐀𝐍𝐍𝐋𝐄 𝐅𝐎𝐋𝐋𝐎𝐖 𝐑𝐄𝐐_\n *𝐋𝐈𝐍𝐊:* https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j\n\n ${Config.botname} *WORKS*`;
+    const channelMessage = `𝑩𝑳𝑨𝑪𝑲 𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑾𝑨𝑪𝑯𝑨𝑵𝑵𝑬𝑳\n\n _𝙹𝙾𝙸𝙽 𝙰𝙽𝙳 𝙵𝙾𝙻𝙻𝙾𝚆 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙱𝙴 𝙶𝙴𝚃𝚃𝙸𝙽𝙶 𝙻𝙰𝚃𝙴𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴𝚂_\n *ʟɪɴᴋ:* https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y\n\n ${Config.botname} *WORKS*`;
 
     const contextInfo = {
       forwardingScore: 999,
@@ -39,7 +39,7 @@ smd(
     filename: __filename,
   },
   async (message) => {
-    const SupportMsg = `𝐖𝐀𝐒𝐈 𝐌𝐃 𝐕2 𝐎𝐅𝐅𝐈𝐂𝐀𝐋 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏\n\n *ʟɪɴᴋ:*https://chat.whatsapp.com/Dd2RCJsumFWBfQ6290pDy8 \n\n ${Config.botname} *WORKS*`;
+    const SupportMsg = `𝑩𝑳𝑨𝑪𝑲 𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑾𝑨𝑮𝑹𝑶𝑼𝑷\n\n *ʟɪɴᴋ:* https://chat.whatsapp.com/Cq94ibBs0KQ0R1m9cVWNeN\n\n ${Config.botname} *WORKS*`;
 
     const contextInfo = {
       forwardingScore: 999,
@@ -69,7 +69,7 @@ smd(
        return await _0x1cec94.reply("_No messages found!_");
      }
      const _0x338160 = Object.entries(_0x5af784).map(([_0x4630e3, _0x3a7f93]) => "\t*" + (_0x4630e3?.split("\n").join(" ") || "unknown") + "*  ➪  _" + _0x3a7f93 + "_").join("\n");
-     var _0x370694 = ("*𝐋𝐈𝐒𝐓 𝐎𝐅 𝐀𝐂𝐓𝐈𝐕𝐄 𝐔𝐒𝐄𝐑*\n_Note: Sometimes Data will be reset when bot restart!_\n\n*Total Users: _" + _0x599777.length + "_*\n\n*USERNAME ➪ MESSAGE COUNT(s)*\n" + _0x338160 + "\n\n" + Config.caption).trim();
+     var _0x370694 = ("*LIST OF ACTIVE USERS IN CURRENT CHAT*\n_Note: Sometimes Data will be reset when bot restart!_\n\n*Total Users: _" + _0x599777.length + "_*\n\n*USERNAME ➪ MESSAGE COUNT(s)*\n" + _0x338160 + "\n\n" + Config.caption).trim();
      await _0x1cec94.send(_0x370694, {
        contextInfo: {
          ...(await _0x1cec94.bot.contextInfo("ACTIVE USERS", _0x1cec94.senderName))
@@ -254,7 +254,7 @@ smd(
    }
  });
  smd({
-   cmdname: "wasimd",
+   cmdname: "features",
    category: "misc",
    filename: __filename,
    info: "get counting for total features!"
@@ -281,7 +281,7 @@ smd(
          edit: _0x2d7cf6
        }, "asta", _0x4e7c63);
      } catch (_0x28ce7e) {}
-     let _0x50f17a = " *乂 ＷＡＳＩ－ＭＤ－Ｖ２ ＣＯＭＭＡＮＤＳ ＬＩＳＴ ＡＮＤ ＦＵＮ*\n\n\n  ◦ _Total Features ➪ " + _0x4cf8ed + "_\n  \n*◦ LIST DOWN THE FEATURES*\n\n      _Commands ➪ " + Object.values(_0x4de967.commands).filter(_0x54d4bf => _0x54d4bf.pattern).length + "_\n      _Msg Listener ➪ " + Object.values(_0x4de967.commands).filter(_0x2376a3 => _0x2376a3.on).length + "_\n      _Call Listener ➪ " + Object.values(_0x4de967.commands).filter(_0x54a19b => _0x54a19b.call).length + "_\n      _Group Listener ➪ " + Object.values(_0x4de967.commands).filter(_0x35381c => _0x35381c.group).length + "_\n  \n\n" + Config.caption;
+     let _0x50f17a = " *𝑩𝑳𝑨𝑪𝑲 𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫 𝑨𝑳𝑳 𝑪𝑴𝑫*\n\n\n  ◦ _Total Features ➪ " + _0x4cf8ed + "_\n  \n*◦ LIST DOWN THE FEATURES*\n\n      _Commands ➪ " + Object.values(_0x4de967.commands).filter(_0x54d4bf => _0x54d4bf.pattern).length + "_\n      _Msg Listener ➪ " + Object.values(_0x4de967.commands).filter(_0x2376a3 => _0x2376a3.on).length + "_\n      _Call Listener ➪ " + Object.values(_0x4de967.commands).filter(_0x54a19b => _0x54a19b.call).length + "_\n      _Group Listener ➪ " + Object.values(_0x4de967.commands).filter(_0x35381c => _0x35381c.group).length + "_\n  \n\n" + Config.caption;
      await _0x4e7c63.bot.relayMessage(_0x4e7c63.chat, {
        requestPaymentMessage: {
          currencyCodeIso4217: "NG",

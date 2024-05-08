@@ -12,34 +12,10 @@ const {
   listall,
   prefix,
   smd,
+  generateSticker,
   TelegraPh,
   Config
 } = require("../lib");
-async function generateSticker(_0x43a996, _0x5c979b, _0x116cae = {
-  pack: Config.packname,
-  author: Config.author
-}, _0x5b1252 = true) {
-  try {
-    const {
-      Sticker: _0x92981e,
-      createSticker: _0x1a1a97,
-      StickerTypes: _0x5f17c1
-    } = require("wa-sticker-formatter");
-    let _0x54c67c = new _0x92981e(_0x5c979b, {
-      ..._0x116cae
-    });
-    return await _0x43a996.bot.sendMessage(_0x43a996.chat, {
-      sticker: await _0x54c67c.toBuffer()
-    }, {
-      quoted: _0x43a996,
-      messageId: _0x43a996.bot.messageId()
-    });
-  } catch (_0x32ee71) {
-    if (_0x5b1252) {
-      await _0x43a996.error(_0x32ee71 + "\n\nfileName: generateSticker->s.js\n");
-    }
-  }
-}
 let mtypes = ["imageMessage", "videoMessage", "stickerMessage"];
 smd({
   cmdname: "sticker",
@@ -82,7 +58,7 @@ smd({
     }
     let _0x44d3dd = _0x3febcd.split("|");
     let _0x47c982 = _0x44d3dd[0]?.trim() !== "" ? _0x44d3dd[0] : _0x471740.pushName;
-    let _0x20f704 = _0x44d3dd[1] && _0x44d3dd[1] !== "" ? _0x44d3dd[1] : "𝐖𝐚𝐬𝐢 𝐦𝐝 𝐯2 ♥️";
+    let _0x20f704 = _0x44d3dd[1] && _0x44d3dd[1] !== "" ? _0x44d3dd[1] : "Panther 🐯";
     let _0x3ab776 = await _0xad98fb.download();
     let _0x3d0871 = {
       pack: _0x47c982,
@@ -202,7 +178,7 @@ smd({
     const _0x4cf39c = _0x2b9570?.urls?.regular || false;
     if (_0x4cf39c) {
       await _0x5c07ae.sendUi(_0x5c07ae.jid, {
-        caption: "*---Random Wallpapers Here---*"
+        caption: "*---Panther Wallpapers Here---*"
       }, {
         quoted: _0x5c07ae
       }, "image", _0x4cf39c);
@@ -336,7 +312,7 @@ smd({
     try {
       await _0xa1cfa2.send(_0x3dabe8, {
         packname: Config.packname,
-        author: "𝐖𝐀𝐒𝐈-𝐌𝐃"
+        author: "Suhail-Md"
       }, "sticker");
     } catch (_0x5763ea) {
       console.log("error in quotely : ", _0x5763ea);
@@ -356,14 +332,14 @@ smd({
   pattern: "fancy",
   desc: "Makes stylish/fancy given text",
   category: "converter",
-  use: "56 WASI MD V2",
+  use: "56 Asta",
   filename: __filename
 }, async (_0x230c03, _0x3b568a) => {
   try {
-    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*𝐖𝐀𝐒𝐈-𝐌𝐃-𝐅𝐀𝐍𝐂𝐘-𝐓𝐄𝐗𝐓💬* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy Asta(For all text)\n\t\t" + prefix + "fancy 25 Asta(For specific text)```\n\n");
+    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*🔰PANTHER-MD_FANCY_TEXT🔰* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy Panther(For all text)\n\t\t" + prefix + "fancy 25 Panther(For specific text)```\n\n");
     let _0x50c7d9 = parseInt(_0x3b568a);
     if (isNaN(_0x50c7d9)) {
-      let _0x4ca942 = _0x3b568a ? _0x3b568a : "Wasi";
+      let _0x4ca942 = _0x3b568a ? _0x3b568a : "Panther";
       listall(_0x4ca942).forEach((_0x51f58f, _0x2be109) => {
         _0x365550 += "\n" + (_0x2be109 += 1) + " " + _0x51f58f + "\n";
       });
@@ -410,7 +386,7 @@ smd({
   try {
     let _0xd51ec = _0x4cb7aa ? _0x4cb7aa : _0x4cfc4e.reply_text;
     if (!_0xd51ec) {
-      return _0x4cfc4e.reply("*_Example : " + prefix + "fliptext Asta MD!_*");
+      return _0x4cfc4e.reply("*_Example : " + prefix + "fliptext Panther MD!_*");
     }
     let _0x5c7a34 = _0xd51ec.split("").reverse().join("");
     await _0x4cfc4e.reply("*「  Text Flipper Tool  」* \n*IGiven text :*\n" + _0xd51ec + "\n\n*Fliped text :*\n" + _0x5c7a34);
@@ -693,7 +669,7 @@ smd({
         return _0x3dac0f = false;
       });
     } else {
-      return _0x54e3dc.reply("*_Uhh Dear, provide text, ex .ttp 4 hii im asta!!_*");
+      return _0x54e3dc.reply("*_Uhh Dear, provide text, ex .ttp 4 hii im suhail!!_*");
     }
   } catch (_0x72e5d) {
     return await _0x54e3dc.error(_0x72e5d + "\n\ncmdName: ttp\n");
