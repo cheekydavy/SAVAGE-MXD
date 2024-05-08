@@ -27,7 +27,7 @@
     "BOT_NAME": {
       "description": " NAME FOR BOT",
       "required": false,
-      "value": "𝐵𝐿𝐴𝐶𝐾 𝑃𝐴𝑁𝑇𝐻𝐸𝑅 𝑋5"
+      "value": "𝐵𝐿𝐴𝐶𝐾 𝑃𝐴𝑁𝑇𝐻𝐸𝑅 𝘔𝘋"
     },
     "TZ": {
       "description": "Put TIME_ZONE according to your location",
