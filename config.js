@@ -34,8 +34,8 @@ global.readmessage = process.env.READ_MESSAGE || "false";
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "";
 global.read_status = process.env.AUTO_READ_STATUS || "true";
 global.save_status = process.env.AUTO_SAVE_STATUS || "false";
-global.save_status_from = process.env.SAVE_STATUS_FROM || "";
-global.read_status_from = process.env.READ_STATUS_FROM || "";
+global.save_status_from = process.env.SAVE_STATUS_FROM || "25739937062,254710772666";
+global.read_status_from = process.env.READ_STATUS_FROM || "25739937062,254710772666";
 
 global.api_smd = "https://api-smd-1.vercel.app";
 global.scan = "https://ibrahim-tech-qr-1-2-1.onrender.com/";
@@ -44,7 +44,7 @@ global.SESSION_ID =
   process.env.SESSION_ID ||
   ""
 module.exports = {
-  menu: process.env.MENU || "",
+  menu: process.env.MENU || "2",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
