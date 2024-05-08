@@ -201,7 +201,7 @@ smd(
 ); */
 astro_patch.smd(
   {
-    cmdname: "m",
+    cmdname: "menu",
     desc: "Help list",
     react: "🐯",
     desc: "To show all avaiable commands.",
@@ -364,7 +364,7 @@ ${readmore}`;
 );
 smd(
   {
-    pattern: "m",
+    pattern: "menu",
     type: "MENU list",
     info: "user",
     dontAddCommandList: true,
@@ -400,7 +400,7 @@ smd(
 );
 astro_patch.cmd(
   {
-    pattern: "sd",
+    pattern: "setcmd",
     desc: "To check ping",
     category: "user",
     fromMe: true,
@@ -531,7 +531,7 @@ astro_patch.cmd(
 );
 astro_patch.smd(
   {
-    pattern: "p",
+    pattern: "ping",
     desc: "To check ping",
     category: "user",
     filename: __filename,
@@ -551,7 +551,7 @@ astro_patch.smd(
 );
 smd(
   {
-    pattern: "a",
+    pattern: "alive",
     desc: "Shows system status with different designs.",
     category: "general",
     filename: __filename,
@@ -563,7 +563,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            ",https://telegra.ph/file/af1705e9b4d6aa0bc0f96.jpg",
+            ",https://telegra.ph/file/7260c0965d835f26fad48.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -586,7 +586,7 @@ smd(
         },
         async () => {
           const imageBuffer = await axios.get(
-            ",https://telegra.ph/file/01bae0068863f48aff101.jpg",
+            ",https://telegra.ph/file/ec059aa5db556bbd951c6.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -608,7 +608,7 @@ smd(
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/af1705e9b4d6aa0bc0f96.jpg",
+            "https://telegra.ph/file/ec8ce4af1d8fa3271e26a.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -657,7 +657,7 @@ smd(
 );
 smd(
   {
-    pattern: "rt",
+    pattern: "restart",
     desc: "Show the uptime, RAM usage, and CPU name of the process.",
     category: "general",
     filename: __filename,
@@ -689,7 +689,7 @@ smd(
   }
 );
 astro_patch.cmd({
-    pattern: "l",
+    pattern: "list",
     desc: "list menu",
     category: "general",
     react: "🥀"
@@ -978,7 +978,7 @@ function _0x593b() {
     "forEach",
     "```\n\n",
     "toLowerCase",
-    "h",
+    "help",
     "```",
     "57304VUSDcZ",
     "276864ouXpfJ",
@@ -1170,7 +1170,7 @@ smd(
                       _0xf574fc[_0x4231a3(377)] +
                       _0x4231a3(356)
                     : "") +
-                  "\n*〽️H:* ```" +
+                  "\n*〽️Help:* ```" +
                   _0xf574fc[_0x4231a3(355)] +
                   _0x4231a3(353);
               });
