@@ -188,7 +188,7 @@ smd(
           }
         }
 
-        return await message.send("`wasi-MD UPDATE WAS SUCCESSFULL ✅`");
+        return await message.send("`ASTA MD UPDATE WAS SUCCESSFULL ✅`");
       } else {
         return await message.send(
           "*Auto Updated Failed, Unable to Download Update Please Manually Do It*"
@@ -201,9 +201,9 @@ smd(
 ); */
 astro_patch.smd(
   {
-    cmdname: "menu",
+    cmdname: "m",
     desc: "Help list",
-    react: "📁",
+    react: "🐯",
     desc: "To show all avaiable commands.",
     type: "user",
     filename: __filename,
@@ -263,33 +263,33 @@ astro_patch.smd(
         Config.menu.trim().startsWith("1") ||
         Config.menu.toLowerCase().includes("menu1")
       ) {
-        menuThemeHeader = "╭━━━〔 *" + Config.botname + "* 〕━━━┈⊷";
-        menuThemeCommandPrefix = "┃☆│";
-        menuThemeFooter = "┃☆╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
-        menuThemeCategoryHeader = "╭─────────────┈⊷\n│「";
-        menuThemeCategoryFooter = "」\n╰┬────────────┈⊷";
-        menuThemeCommandPrefix = "││◦☆";
-        menuThemeCommandFooter = "│╰────────────┈⊷\n╰─────────────┈⊷";
+        menuThemeHeader = "▱▰▱〔 *" + Config.botname + "* 〕▱▰▱";
+        menuThemeCommandPrefix = "┋⍟┃";
+        menuThemeFooter = "┋⍟╰──────────────\n╰━━━━━━━━━━━━━━━┈⊷";
+        menuThemeCategoryHeader = "╭─────────────┈⍟\n┋「";
+        menuThemeCategoryFooter = "」\n╰┬────────────┈⍟";
+        menuThemeCommandPrefix = "┋⍟┃";
+        menuThemeCommandFooter = "┋╰────────────┈⍟\n╰─────────────┈⍟";
       } else if (
         menuThemeType === 2 ||
         Config.menu.trim().startsWith("2") ||
         Config.menu.toLowerCase().includes("menu2")
       ) {
-        menuThemeHeader = "╭═══ *" + Config.botname + "* ═══⊷\n┃☆╭──────────────";
-        menuThemeCommandPrefix = "┃☆│";
-        menuThemeFooter = "┃☆╰───────────────\n╰═════════════════⊷";
-        menuThemeCategoryHeader = "╭─❏";
-        menuThemeCategoryFooter = "❏";
-        menuThemeCommandPrefix = "┃☆│";
-        menuThemeCommandFooter = "┃☆╰───────────────\n╰═════════════════⊷";
+        menuThemeHeader = "⍟⍟⍟ *" + Config.botname + "* ⍟⍟⍟\n┋⍟╭──────────────";
+        menuThemeCommandPrefix = "┋❃│";
+        menuThemeFooter = "┋❃╰───────────────\n╰═════════════════⍟";
+        menuThemeCategoryHeader = "╭─⍟";
+        menuThemeCategoryFooter = "⍟";
+        menuThemeCommandPrefix = "┋⍟┃";
+        menuThemeCommandFooter = "┋⍟╰───────────────\n╰═════════════════⍟";
       } else {
         menuThemeHeader = "╭〘  " + Config.botname + "  〙";
         menuThemeCommandPrefix = "│ │";
-        menuThemeFooter = "╰═══════════════⊷";
-        menuThemeCategoryHeader = "╭─❍";
-        menuThemeCategoryFooter = "══⊷❍";
-        menuThemeCommandPrefix = "│";
-        menuThemeCommandFooter = "╰════════════─⊷";
+        menuThemeFooter = "╰═══════════════⍟";
+        menuThemeCategoryHeader = "╭─⍟";
+        menuThemeCategoryFooter = "▱▰⍟";
+        menuThemeCommandPrefix = "┋";
+        menuThemeCommandFooter = "╰════════════─⍟";
       }
 
       const categorizedCommands = {};
@@ -318,7 +318,9 @@ ${menuThemeCommandPrefix} *ᴄᴏᴍᴍᴀɴᴅs:* ${commands.length}
 ${menuThemeCommandPrefix} *ᴜsᴀɢᴇ ᴛʀᴇɴᴅ:* ${trend_usage}
 ${menuThemeCommandPrefix} *ᴅᴀᴛᴀʙᴀsᴇ:* ${database_info}
 ${menuThemeFooter}                         
-*𝚆𝙰𝚂𝙸-𝙼𝙳-𝚅2*
+▱▰▱▰▱▰▱▰▱▰▱▱▰▱▱▰
+         𝑩𝑳𝑨𝑪𝑲 𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫
+▱▰▱▰▱▰▱▰▱▰▱▱▰▱▱▰
 ${readmore}`;
 
       for (const category in categorizedCommands) {
@@ -362,7 +364,7 @@ ${readmore}`;
 );
 smd(
   {
-    pattern: "menus",
+    pattern: "m",
     type: "MENU list",
     info: "user",
     dontAddCommandList: true,
@@ -376,7 +378,7 @@ smd(
         _0x22514a.date +
         "\n*➮ɴᴏᴡ ᴛɪᴍᴇ :* " +
         _0x22514a.time +
-        "\n\n➮Fᴏᴜɴᴅᴇʀ- Itxxwasi Team\n➮Oᴡɴᴇʀ - " +
+        "\n\n➮Fᴏᴜɴᴅᴇʀ- 𝐈𝐁𝐑𝐀𝐇𝐈𝐌 𝐓𝐄𝐂𝐇\n➮Oᴡɴᴇʀ - " +
         Config.ownername +
         "\n➮Nᴜᴍ - " +
         owner.split(",")[0] +
@@ -384,7 +386,7 @@ smd(
         formatp(os.totalmem() - os.freemem()) +
         "/" +
         formatp(os.totalmem()) +
-        "\n\n *🧑‍💻 :* ᴡᴀsɪᴍᴅ-ᴠ2\n\n" +
+        "\n\n *🧑‍💻 :*  Panther md ɪꜱ ɴᴏᴡi Aᴠᴀɪʟᴀʙʟᴇ\n\n" +
         readmore +
         "\n╭──❰ *ALL MENU* ❱\n│🏮 Lɪꜱᴛ\n│🏮 Cᴀᴛᴇɢᴏʀʏ\n│🏮 Hᴇʟᴘ\n│🏮 Aʟɪᴠᴇ\n│🏮 Uᴘᴛɪᴍᴇ\n│🏮 Wᴇᴀᴛʜᴇʀ\n│🏮 Lɪɴᴋ\n│🏮 Cᴘᴜ\n│🏮 Rᴇᴘᴏꜱɪᴛᴏʀʏ\n╰─────────────⦁"
       ).trim();
@@ -398,7 +400,7 @@ smd(
 );
 astro_patch.cmd(
   {
-    pattern: "setcmd",
+    pattern: "sd",
     desc: "To check ping",
     category: "user",
     fromMe: true,
@@ -529,18 +531,18 @@ astro_patch.cmd(
 );
 astro_patch.smd(
   {
-    pattern: "ping",
+    pattern: "p",
     desc: "To check ping",
     category: "user",
     filename: __filename,
   },
   async (context) => {
     const startTime = new Date().getTime();
-    const { key: messageKey } = await context.reply("*hmm...*");
+    const { key: messageKey } = await context.reply("*Panther pinging...!*");
     const endTime = new Date().getTime();
     const pingTime = endTime - startTime;
     await context.send(
-      `*𝘓𝘢𝘵𝘦𝘯𝘤𝘺.................🙆‍♂️: ${pingTime} ᴍs*`,
+      `*Pong▱▱▱▰▰▰▰▰ ${pingTime} ᴍs*`,
       { edit: messageKey },
       "",
       context
@@ -549,11 +551,11 @@ astro_patch.smd(
 );
 smd(
   {
-    pattern: "LIV",
+    pattern: "a",
     desc: "Shows system status with different designs.",
     category: "general",
     filename: __filename,
-    use: "LIV",
+    use: "alive",
   },
   async (message, input) => {
     try {
@@ -561,7 +563,7 @@ smd(
       const designs = [
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/d9fb019f63ef3b1d47c6e.jpg",
+            ",https://telegra.ph/file/af1705e9b4d6aa0bc0f96.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -578,13 +580,13 @@ smd(
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `𝘞𝘈𝘚𝘐 𝘔𝘋 𝘝2\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\n𝚆𝙰𝚂𝙸 𝙼𝙳 𝚅𝟸`;
+          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/d9fb019f63ef3b1d47c6e.jpg",
+            ",https://telegra.ph/file/01bae0068863f48aff101.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -600,13 +602,13 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `𝚆𝙰𝚂𝙸 𝙼𝙳 𝚅𝟸 \n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\n𝚆𝙰𝚂𝙸 𝙼𝙳 𝚅𝟸`;
+          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/d9fb019f63ef3b1d47c6e.jpg",
+            "https://telegra.ph/file/af1705e9b4d6aa0bc0f96.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -622,7 +624,7 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `𝘞𝘈𝘚𝘐-𝘔𝘋-𝘝2\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\n𝗕𝗬-𝗪𝗔𝗦𝗜-𝗦𝗘𝗥`;
+          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -646,7 +648,7 @@ smd(
       );
     } catch (error) {
       await message.error(
-        error + "\n\nCommand: LIV",
+        error + "\n\nCommand: alive",
         error,
         "*Failed to show status.*"
       );
@@ -655,7 +657,7 @@ smd(
 );
 smd(
   {
-    pattern: "runtime",
+    pattern: "rt",
     desc: "Show the uptime, RAM usage, and CPU name of the process.",
     category: "general",
     filename: __filename,
@@ -669,13 +671,13 @@ smd(
 
       const ramUsage = process.memoryUsage().heapTotal / 1024 / 1024;
 
-      const message = `*𝗪𝗔𝗦𝗜-𝗠𝗗-𝗩2-𝗜𝗡-𝗥𝗨𝗡𝗡𝗜𝗡𝗚-𝗙𝗥𝗢𝗠:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
+      const message = `*𝑷𝒂𝒏𝒕𝒉𝒆𝒓 ᴍᴅ ʀᴜɴɴɪɴɢ sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
       const contextInfo = {
         isForwarded: true,
         forwardingScore: 999,
-        title: "wasi MD Running Since",
+        title: "Panther MD Running Since",
         body: message,
-        footerText: "wasi MD 2024",
+        footerText: "Panther md 2024",
         isSendNotificationMsg: true,
         mentionedJid: [],
       };
@@ -687,16 +689,16 @@ smd(
   }
 );
 astro_patch.cmd({
-    pattern: "list",
+    pattern: "l",
     desc: "list menu",
     category: "general",
-    react: "📄"
+    react: "🥀"
   }, async _0x1d5ddc => {
     try {
       const {
         commands: _0x7cfe13
       } = require("../lib");
-      let _0x95885d = "\n\t*𝗪𝗔𝗦𝗜-𝗠𝗗-𝗩2-𝗖𝗠𝗗-𝗜𝗡𝗙𝗢*  \n";
+      let _0x95885d = "\n\t*Panther ᴍᴅ ᴄᴏᴍᴍᴀɴᴅs ɪɴғᴏ*  \n";
       for (let _0x2bd72c = 0; _0x2bd72c < _0x7cfe13.length; _0x2bd72c++) {
         if (_0x7cfe13[_0x2bd72c].pattern == undefined) {
           continue;
@@ -976,7 +978,7 @@ function _0x593b() {
     "forEach",
     "```\n\n",
     "toLowerCase",
-    "help",
+    "h",
     "```",
     "57304VUSDcZ",
     "276864ouXpfJ",
@@ -996,7 +998,7 @@ function _0x593b() {
     "schedule",
     "_COMMANDS*  \n┗━━━━━━━━━━━━━━━━━━━━━━━\n\n\n",
     "text",
-    "┏━━━━━━━━━━━━━━━━━━━━━━━\n┃\t𝘄𝗮𝘀𝗶-𝗠𝗱_",
+    "┏━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*PANTHER-MD_",
     "2716190HSgAcg",
     "info",
     "endsWith",
@@ -1093,7 +1095,7 @@ smd(
       if (!isNaN(_0x56b5d3)) {
         if (
           _0x1eb88a[_0x210c92(367)] > 30 &&
-          _0x1eb88a[1][_0x210c92(362)]("WASI-MD_FANCY_TEXT")
+          _0x1eb88a[1][_0x210c92(362)]("PANTHER-MD_FANCY_TEXT")
         ) {
           var _0x7b7a13 = _0x1eb88a[_0x210c92(379)]((_0x4377cc) =>
             _0x4377cc.startsWith(_0x56b5d3 + " ")
@@ -1168,7 +1170,7 @@ smd(
                       _0xf574fc[_0x4231a3(377)] +
                       _0x4231a3(356)
                     : "") +
-                  "\n*〽️Help:* ```" +
+                  "\n*〽️H:* ```" +
                   _0xf574fc[_0x4231a3(355)] +
                   _0x4231a3(353);
               });
