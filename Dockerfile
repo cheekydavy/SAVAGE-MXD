@@ -1,13 +1,13 @@
 FROM quay.io/sampandey001/secktor
 
-RUN git clone https://github.com/Itxxwasi/WASI-MD-V2.git /root/Itxxwasi
+RUN git clone https://github.com/kingibrahimtech/Black-panther-md-x.git /root/kingibrahimtech
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
-RUN rm -rf /root/Itxxwasi/node_modules
+RUN rm -rf /root/kingibrahimtech/node_modules
 
 # Install dependencies
-WORKDIR /root/Itxxwasi
+WORKDIR /root/kingibrahimtech
 RUN npm install
 
 # Add additional Steps To Run...
