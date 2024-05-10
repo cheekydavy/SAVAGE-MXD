@@ -1676,7 +1676,6 @@ smd(
  }, async (_0x2c2023, _0x4ec99f) => {
    try {
      if (!_0x4ec99f) {
-       return await _0x2c2023.reply("*_Give Me Search Query_*");
      }
      let _0x3b2ca6 = await yts(_0x4ec99f);
      let _0x4123ae = _0x3b2ca6.all[0];
@@ -1695,8 +1694,8 @@ smd(
    }
  });
  cmd({
-   pattern: "yts",
-   alias: ["yt", "ytsearch"],
+   pattern: "abu",
+   alias: ["music"],
    desc: "Search Song From youtube",
    category: "downloader",
    filename: __filename,
