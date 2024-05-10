@@ -1413,7 +1413,7 @@ smd(
      if (_0x19c223.toString() == "NaN" || _0x19c223 < 1 || _0x19c223 > 160) {
        return _0x2ee3dd.reply("*_❌ Give a number between 1 to 160_*");
      }
-     let _0xf0331a = "https://api.maher-zubair.tech/download/spotify" + _0x19c223.toString() + ".mp3";
+     let _0xf0331a = "https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/sound" + _0x19c223.toString() + ".mp3";
      let _0x2ba501 = await getBuffer(_0xf0331a);
      var _0x29fdd9 = {
        ...(await _0x2ee3dd.bot.contextInfo(Config.botname, "ᴛɪᴋᴛᴏᴋ ꜱᴏᴜɴᴅ " + _0x19c223))
@@ -1542,21 +1542,14 @@ smd(
      if (!_0x2f0451) {
        return _0x1da3da.reply("Example: " + prefix + "ringtone back in black");
      }
-          let _0x2eca3d = ytIdRegex.exec(_0x25d045) || [];
-     let _0xb6fd2d = _0x2eca3d[0] || false;
-     if (!_0xb6fd2d) {
-       let _0x4bcf6d = await yts(_0x25d045);
-       let _0xa244ed = _0x4bcf6d.videos[0];
-       _0xb6fd2d = _0xa244ed.url;
-     }
-     _0x2eca3d = ytIdRegex.exec(_0xb6fd2d) || [];
-     let _0x6845ab = await yt.getInfo(_0x2eca3d[1]);
-     let _0x516e89 = _0x6845ab.title || _0x37323e || _0x2eca3d[1];
-     if (_0x6845ab && _0x6845ab.duration >= videotime) {
-       return await _0x54463e.reply("*_Can't dowanload, file duration too big_*");
-     }
-     await _0x54463e.send("_Downloading " + _0x6845ab.title + "?_");
-     let _0x37323e = await yt.download(_0x2eca3d[1], {
+     const {
+       ringtone: _0x2ec04e
+     } = require("../lib/scraper");
+     let _0x5f35d4 = await _0x2ec04e(_0x2f0451);
+     var _0x2e165b = {
+       ...(await _0x1da3da.bot.contextInfo(Config.botname, "ʀɪɴɢᴛᴏɴᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
+     };
+     let _0x5c9751 = {
        audio: {
          url: _0x5f35d4[0].audio
        },
