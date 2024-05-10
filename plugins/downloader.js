@@ -1273,8 +1273,8 @@ smd(
  });
  smd(
    {
-     pattern: "video2",
-     desc: "Downloads video from YouTube using yt-search.",
+     pattern: "play",
+     desc: "Downloads audio from YouTube using yt-search.",
      category: "downloader",
      filename: __filename,
      use: "<video title or URL>",
@@ -1283,13 +1283,13 @@ smd(
      try {
        const input = query || message.reply_text;
        if (!input) {
-         return message.reply(`*Use: ${prefix}video2 <video title or URL>*`);
+         return message.reply(`*Use: ${prefix}play <video title or URL>*`);
        }
  
        const videoUrl =
          ytIdRegex.exec(input) || (await getVideoUrl(input)).videos[0].url;
        if (!videoUrl) {
-         return message.reply("*No video found!*");
+         return message.reply("*No music found!*");
        }
  
        const info = await yt.getInfo(ytIdRegex.exec(videoUrl)[1]);
@@ -1297,7 +1297,7 @@ smd(
        const downloadOptions = {
          type: "video",
          quality: info.pref_Quality || "best",
-         format: "mp4",
+         format: "mp3",
        };
  
        const videoPath = await yt.download(
@@ -1315,7 +1315,7 @@ smd(
            [fileType]: { url: videoPath },
            fileName: videoTitle,
            caption: Config.caption,
-           mimetype: "video/mp4",
+           mimetype: "video/mp3",
            contextInfo,
          });
          fs.unlinkSync(videoPath);
@@ -1345,7 +1345,7 @@ smd(
    return false;
  }
  smd({
-   pattern: "play",
+   pattern: "play2",
    alias: ["music"],
    desc: "Sends info about the query(of youtube video/audio).",
    category: "downloader",
