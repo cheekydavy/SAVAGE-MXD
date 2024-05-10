@@ -1771,9 +1771,9 @@ smd(
      try {
        let _0x5a46ec = await yt.getInfo(_0x4a3f32[1]);
        let _0x257939 = {
-         type: "video",
+         type: "play3",
          quality: _0x5a46ec.pref_Quality || "best",
-         format: "mp4"
+         format: "mp3"
        };
        if (_0x5a46ec.duration >= videotime) {
          _0x58ceb6 = "document";
@@ -1789,7 +1789,7 @@ smd(
              url: _0x588c42
            },
            fileName: _0x13be6f,
-           mimetype: "video/mp4",
+           mimetype: "audio/mp3",
            contextInfo: _0x3b1bff
          });
        } else {
@@ -1800,7 +1800,7 @@ smd(
        } catch {}
        return;
      } catch (_0x363775) {
-       return _0x1d4717.error(_0x363775 + "\n\ncommand: ytmp4", _0x363775, "*_Uhh dear, Video not Found!!_*");
+       return _0x1d4717.error(_0x363775 + "\n\ncommand: ytmp3", _0x363775, "*_Uhh dear, Video not Found!!_*");
      }
    }
  });
@@ -1815,7 +1815,7 @@ smd(
      if (jsonResponse.status === 200) {
        let result = jsonResponse.result;
        let imageUrls = result.image_urls;
-       let videoUrls = result.video_urls;
+       let videoUrls = result.audio_urls;
  
        if (imageUrls.length > 0) {
          for (let imageUrl of imageUrls) {
@@ -1823,9 +1823,9 @@ smd(
          }
        }
  
-       if (videoUrls.length > 0) {
-         for (let videoUrl of videoUrls) {
-           await m.send(videoUrl, { caption: Config.caption }, "video", m);
+       if (audioUrls.length > 0) {
+         for (let audioUrl of videoUrls) {
+           await m.send(audioUrl, { caption: Config.caption }, "Play3", m);
          }
        }
      } else {
