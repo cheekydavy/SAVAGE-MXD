@@ -469,7 +469,7 @@ smd(
  }
  smd(
    {
-     pattern: "play",
+     pattern: "spotify",
      alias: ["sp"],
      desc: "Searches for Spotify tracks.",
      category: "search",
@@ -1544,7 +1544,7 @@ smd(
      }
      const {
        ringtone: _0x2ec04e
-     } = require("../lib/Alive3.mp3");
+     } = require("../lib/scraper);
      let _0x5f35d4 = await _0x2ec04e(_0x2f0451);
      var _0x2e165b = {
        ...(await _0x1da3da.bot.contextInfo(Config.botname, "ʀɪɴɢᴛᴏɴᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
@@ -1695,8 +1695,8 @@ smd(
    }
  });
  cmd({
-   pattern: "yts",
-   alias: ["yt", "ytsearch"],
+   pattern: "play",
+   alias: ["music", "ytsearch"],
    desc: "Search Song From youtube",
    category: "downloader",
    filename: __filename,
@@ -1707,7 +1707,7 @@ smd(
        return await _0x1c8285.reply("*_Give Me Search Query!_*");
      }
      let _0x2878ec = await yts(_0xca939c);
-     let _0x4186e4 = "*Panther-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n*_______________________________* \n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
+     let _0x4186e4 = "*Black Panther Music Search* \n*_______________________________* \n\n_Reply Any Number To Download your video._\n  _Then reply that video with .mp3 to get your audio._\n  _For document: 1 document._\n\n_Results For : " + _0xca939c + "_ \n\n";
      let _0x463366 = 1;
      for (let _0x308e22 of _0x2878ec.all) {
        _0x4186e4 += " \n*" + _0x463366++ + " : " + _0x308e22.title + (_0x308e22.timestamp ? "(" + _0x308e22.timestamp + ")" : "") + "*\n*Url : " + _0x308e22.url + "*";
