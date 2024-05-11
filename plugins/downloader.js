@@ -1407,7 +1407,7 @@ smd(
  }, async (_0x2ee3dd, _0x20a520) => {
    try {
      if (!_0x20a520) {
-       return _0x2ee3dd.reply("*Give A Number Example: " + prefix + "alive 3*");
+       return _0x2ee3dd.reply("*Give A Number Example: " + prefix + "alive 9*");
      }
      const _0x19c223 = parseInt(_0x20a520);
      if (_0x19c223.toString() == "NaN" || _0x19c223 < 1 || _0x19c223 > 160) {
@@ -1667,7 +1667,7 @@ smd(
    }
  );
  smd({
-   pattern: "song",
+   pattern: "play",
    alias: ["audio"],
    desc: "Downloads audio from youtube.",
    category: "downloader",
@@ -1695,7 +1695,7 @@ smd(
    }
  });
  cmd({
-   pattern: "play",
+   pattern: "yts",
    alias: ["yt", "ytsearch"],
    desc: "Search Song From youtube",
    category: "downloader",
