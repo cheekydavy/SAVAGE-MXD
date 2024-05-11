@@ -284,7 +284,7 @@ smd({
 }, async (_0x1ae8f8, _0x1c586e) => {
   try {
     if (!_0x1c586e) {
-      return await _0x1ae8f8.reply("*Provide Repo Url, _.gitclone https://github.com/mouricedevs/Gifted-Md_*");
+      return await _0x1ae8f8.reply("*Provide Repo Url, _.gitclone https://github.com/kingibrahimtech/Black-panther-md-x/tree/main_*");
     }
     if (!/(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i.test(_0x1c586e)) {
       return await _0x1ae8f8.reply("*Provide Valid Repositry Url*");
@@ -385,7 +385,7 @@ smd({
   }
 });
 smd({
-  'pattern': 'video',
+  'pattern': 'play',
   'desc': "Downloads video from yt.",
   'category': "downloader",
   'filename': __filename,
@@ -422,7 +422,7 @@ smd({
       _0x4195ce.on("finish", _0x3fc982);
     });
     var _0x3048ab = {
-      ...(await _0xe5ea97.bot.contextInfo(Config.botname, "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
+      ...(await _0xe5ea97.bot.contextInfo "*reply this video with .mp3 to get your audio*";
     };
     let _0x3d0cf7 = {
       [_0x5b10f0]: fs.readFileSync(_0x5d70e6),
@@ -452,7 +452,7 @@ smd({
       };
       let _0x3e3caf = await yt.download(_0x421809[0x1], _0x3d6d42);
       var _0x3048ab = {
-        ...(await _0xe5ea97.bot.contextInfo(Config.botname, "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ"))
+        ...(await _0xe5ea97.bot.contextInfo"*reply this video with .mp3 to get your audio*";
       };
       let _0x3448d2 = _0x4e4465.title || _0x3e3caf || _0x421809[0x1] || "Gifted MD -- YT Video";
       if (_0x3e3caf) {
@@ -534,7 +534,7 @@ smd({
   }
 });
 smd({
-  'pattern': "play",
+  'pattern': "play3",
   'alias': ['music'],
   'desc': "Sends info about the query(of youtube video/audio).",
   'category': "downloader",
@@ -588,7 +588,7 @@ smd({
   }
 });
 smd({
-  'pattern': "sound",
+  'pattern': "alive",
   'desc': "Downloads ringtone.",
   'category': 'downloader',
   'filename': __filename,
