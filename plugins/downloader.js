@@ -385,7 +385,7 @@ smd({
   }
 });
 smd({
-  'pattern': 'video',
+  'pattern': 'play',
   'desc': "Downloads video from yt.",
   'category': "downloader",
   'filename': __filename,
@@ -534,7 +534,7 @@ smd({
   }
 });
 smd({
-  'pattern': "play",
+  'pattern': "play4",
   'alias': ['music'],
   'desc': "Sends info about the query(of youtube video/audio).",
   'category': "downloader",
@@ -588,7 +588,7 @@ smd({
   }
 });
 smd({
-  'pattern': "sound",
+  'pattern': "alive",
   'desc': "Downloads ringtone.",
   'category': 'downloader',
   'filename': __filename,
