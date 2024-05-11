@@ -232,7 +232,7 @@ smd({
 });
 smd(
   {
-    pattern: "alive",
+    pattern: "alive2",
     desc: "Shows system status with different designs.",
     category: "general",
     filename: __filename,
