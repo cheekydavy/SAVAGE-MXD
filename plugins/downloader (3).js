@@ -619,7 +619,7 @@ cmd(
       if (Request.length) {
         let files = await download(Request[0].id);
         let Info =
-          "*ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " +
+          "*Panther-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " +
           match +
           "_ \n";
         for (let results = 0; results < Request.length; results++) {
@@ -671,7 +671,7 @@ UserFunction(
         return await message.reply(
           "*`Give Me Git Repo`*\n\n" +
             prefix +
-            "gitclone https://github.com/Astropeda/Asta-Md"
+            "gitclone https://github.com/kingibrahimtech/Black-panther-md-x"
         );
       }
       const URl = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i;
@@ -812,7 +812,7 @@ UserFunction(
       let isVoice = message.reply_text ? message.reply_text : query;
       if (!isVoice) {
         return message.reply(
-          "*`Example : " + prefix + "tts Hi,I am Asta-Md whatsapp bot.`*"
+          "*`Example : " + prefix + "tts Hi,I am Panther-Md whatsapp bot.`*"
         );
       }
       try {
@@ -1591,7 +1591,7 @@ UserFunction(
       };
       let FTYPE = {
         audio: AFILE,
-        fileName: "Asta-Md tiktok Sound" + data + ".m4a",
+        fileName: "Panther-Md tiktok Sound" + data + ".m4a",
         mimetype: "audio/mpeg",
         ptt: true,
         contextInfo: MTYPE,
@@ -1798,7 +1798,7 @@ UserFunction(
       let q = await yts(match);
       let resukt = q.all[0];
       let RTYPE =
-        "\t *ᴀsᴛᴀ-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " +
+        "\t *Panther-ᴍᴅ • sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*   \n\n*Title :* " +
         resukt.title +
         "\nUrl : " +
         resukt.url +
@@ -1849,7 +1849,7 @@ UserFunction(
       }
       let resulr = await yts(query);
       let MTYPE =
-        "*ᴀsᴛᴀ-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n\n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " +
+        "*Panther-ᴍᴅ • ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅ* \n\n\n_Reply Any Number To Download._\n  _For Audio: 1 mp3._\n  _For Video: 1 video._\n  _For document: 1 document._\n\n_Results For : " +
         query +
         "_ \n\n";
       let DAT = 1;
@@ -2261,7 +2261,7 @@ cmd(
             );
           }
         }
-      } else if (MenuOptions[0].includes("ᴀsᴛᴀ-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
+      } else if (MenuOptions[0].includes("Panther-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ")) {
         let request = "*" + message.text.split(" ")[0] + " : ";
         const Options = MenuOptions.find((selected) =>
           selected.startsWith(request)
