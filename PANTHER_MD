@@ -4,4 +4,4 @@ WORKDIR /root/kingibrahimtech
 RUN npm install
 EXPOSE 8000
 CMD ["npm","start" ] 
-# POWERD BY IBRAHIM ADAMS
+# POWERD BY MBUVI TECH
