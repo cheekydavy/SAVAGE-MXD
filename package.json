@@ -1,19 +1,19 @@
 {
-   "name": "Pantherx5",
+   "name": "SAVAGE",
    "version": "3.5.0",
    "description": "Simple WhatsApp Bot",
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
-     "run": "pm2 start . --deep-monitoring --attach --name Panther || node .",
-     "asta": "pm2 start . --deep-monitoring --attach --name Panther || node .",
-     "start": "pm2 start . --attach --name Panther",
-     "stop": "pm2 stop Panther",
-     "old-heroku-postbuild": "git clone https://github.com/kingibrahimtech/Black-panther-md-x.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
-     "fis-heroku-postbuild": "git clone https://github.com/kingibrahimtech/Black-panther-md-x.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
+     "run": "pm2 start . --deep-monitoring --attach --name Savage || node .",
+     "asta": "pm2 start . --deep-monitoring --attach --name Savage || node .",
+     "start": "pm2 start . --attach --name Savage",
+     "stop": "pm2 stop Savage",
+     "old-heroku-postbuild": "git clone https://github.com/cheekydavy/Savage-md.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
+     "fis-heroku-postbuild": "git clone https://github.com/cheekydavy/Savage-md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
      "postinstall": "npx puppeteer@latest install --y"
    },
-   "author": "kingibrahimtech",
+   "author": "MbuviTech",
    "license": "GPL-2.0 license",
    "dependencies": {
      "@adiwajshing/keyed-db": "^0.2.4",
@@ -76,11 +76,11 @@
    },
    "repository": {
      "type": "git",
-     "url": "git+https://github.com/kingibrahimtech/Black-panther-md-x.git"
+     "url": "git+https://github.com/cheekydavy/savage-md.git"
    },
    "bugs": {
-     "url": "https://github.com/kingibrahimtech/Black-panther-md-x/issues"
+     "url": "https://github.com/cheekydavy/Savage-md/issues"
    },
-   "homepage": "https://github.com/kingibrahimtech/Black-panther-md-x#readme"
+   "homepage": "https://github.com/cheekydavy/Savage-md#readme"
  }
  
