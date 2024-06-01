@@ -619,7 +619,7 @@ cmd(
       if (Request.length) {
         let files = await download(Request[0].id);
         let Info =
-          "*Panther-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " +
+          "*Savage-ᴍᴅ • ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪsᴛ* \n*________________________________* \n\n*_Reply Any Number To Download._*\n_Results For : " +
           match +
           "_ \n";
         for (let results = 0; results < Request.length; results++) {
@@ -671,7 +671,7 @@ UserFunction(
         return await message.reply(
           "*`Give Me Git Repo`*\n\n" +
             prefix +
-            "gitclone https://github.com/kingibrahimtech/Black-panther-md-x"
+            "gitclone https://github.com/cheekydavy/Savage-md"
         );
       }
       const URl = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i;
