@@ -316,7 +316,7 @@ smd({
     if (!res.status === 200) return message.send("*There's a problem, try again later!*");
 
     const { result } = res;
-    const astro = "PANTHER 𝙂𝙋𝙏4\n "
+    const astro = "SAVAGE GPT4\n "
     const tbl = "```";
     await send(message, `${astro}${tbl}${result}${tbl}`);
   } catch (e) {
@@ -632,7 +632,7 @@ smd(
     pattern: "aitts",
     desc: "Text to Voice Using Eleven Lab Ai",
     category: "ai",
-    use: "<Hii, Ibrahim>",
+    use: "<Hii, Mbuvi>",
     filename: __filename,
   },
   async (_0x1a01af, _0x1ac85a) => {
@@ -658,7 +658,7 @@ smd(
     alias: ["recognition", "anonychat"],
     desc: "Send message Annonymously",
     category: "ai",
-    use: "<Hii, Ibrahim>",
+    use: "<Hii, Mbuvi>",
     filename: __filename,
   },
   async (_0x358984, _0x20693a, { smd: _0x12d243 }) => {
@@ -702,7 +702,7 @@ smd(
         _0x3079e2.msgStatus = true;
         _0x3079e2.senderMsg = _0x358984;
         _0x5f656f =
-          "*Black-Panther-Md• ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ*\n\n*Msg_Id:* " +
+          "*savage-Md• ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ*\n\n*Msg_Id:* " +
           _0x3079e2.id +
           "\n*Date:* _" +
           _0xbcd286 +
@@ -745,8 +745,8 @@ smd(
           return;
         }
         if (
-          _0x2acf30.reply_text.includes("Panther-ᴍᴅ • ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ") &&
-          _0x2dfb59[0].includes("Panther-ᴍᴅ • ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ") &&
+          _0x2acf30.reply_text.includes("savage-md• ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ") &&
+          _0x2dfb59[0].includes("Savage-ᴍᴅ • ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ") &&
           _0x2dfb59[2].includes("Msg_Id")
         ) {
           let _0x1b0d01 = "" + _0x2dfb59[2].replace("*Msg_Id:* ", "").trim();
@@ -761,7 +761,7 @@ smd(
                 _0x2ecd2a.howmanyreply += 1;
                 const _0x5a2204 = _0x2acf30.text.indexOf(",");
                 let _0x3f6b59 =
-                  "*Panther-ᴍᴅ • ʏᴏᴜʀ ᴀɴᴏɴʏ-ᴍsɢ ʀᴇᴘʟʏ*\n\n*_From @" +
+                  "*Savage-ᴍᴅ • ʏᴏᴜʀ ᴀɴᴏɴʏ-ᴍsɢ ʀᴇᴘʟʏ*\n\n*_From @" +
                   _0x2ecd2a.reciever.split("@")[0] +
                   "_*\n*_Msg_Id: " +
                   _0x2ecd2a.id +
