@@ -319,7 +319,7 @@ ${menuThemeCommandPrefix} *ᴜsᴀɢᴇ ᴛʀᴇɴᴅ:* ${trend_usage}
 ${menuThemeCommandPrefix} *ᴅᴀᴛᴀʙᴀsᴇ:* ${database_info}
 ${menuThemeFooter}                         
 ▱▰▱▰▱▰▱▰▱▰▱▱▰▱▱▰
-      𝑩𝑳𝑨𝑪𝑲 𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫 ✅𝘟5
+      SAVAGE MD
 ▱▰▱▰▱▰▱▰▱▰▱▱▰▱▱▰
 ${readmore}`;
 
@@ -378,7 +378,7 @@ smd(
         _0x22514a.date +
         "\n*➮ɴᴏᴡ ᴛɪᴍᴇ :* " +
         _0x22514a.time +
-        "\n\n➮Fᴏᴜɴᴅᴇʀ- 𝐈𝐁𝐑𝐀𝐇𝐈𝐌 𝐓𝐄𝐂𝐇\n➮Oᴡɴᴇʀ - " +
+        "\n\n➮Fᴏᴜɴᴅᴇʀ- MBUVI 𝐓𝐄𝐂𝐇\n➮Oᴡɴᴇʀ - " +
         Config.ownername +
         "\n➮Nᴜᴍ - " +
         owner.split(",")[0] +
@@ -386,7 +386,7 @@ smd(
         formatp(os.totalmem() - os.freemem()) +
         "/" +
         formatp(os.totalmem()) +
-        "\n\n *🧑‍💻 :*  Panther md ɪꜱ ɴᴏᴡi Aᴠᴀɪʟᴀʙʟᴇ\n\n" +
+        "\n\n *🧑‍💻 :*  Savage md ɪꜱ ɴᴏᴡi Aᴠᴀɪʟᴀʙʟᴇ\n\n" +
         readmore +
         "\n╭──❰ *ALL MENU* ❱\n│🏮 Lɪꜱᴛ\n│🏮 Cᴀᴛᴇɢᴏʀʏ\n│🏮 Hᴇʟᴘ\n│🏮 Aʟɪᴠᴇ\n│🏮 Uᴘᴛɪᴍᴇ\n│🏮 Wᴇᴀᴛʜᴇʀ\n│🏮 Lɪɴᴋ\n│🏮 Cᴘᴜ\n│🏮 Rᴇᴘᴏꜱɪᴛᴏʀʏ\n╰─────────────⦁"
       ).trim();
@@ -538,7 +538,7 @@ astro_patch.smd(
   },
   async (context) => {
     const startTime = new Date().getTime();
-    const { key: messageKey } = await context.reply("*Panther pinging...!*");
+    const { key: messageKey } = await context.reply("*Savage pinging...!*");
     const endTime = new Date().getTime();
     const pingTime = endTime - startTime;
     await context.send(
@@ -580,13 +580,13 @@ smd(
           const quoteText = `\n\n*"${quote.result.body}"*\n_- ${quote.result.author}_`;
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
+          const captionText = `SAVAGE MD \n\n*Ping:* ${pingSeconds} seconds${quoteText}\n\nSAVAGE MD`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            ",https://telegra.ph/file/ec059aa5db556bbd951c6.jpg",
+            ",https://telegra.ph/file/a7ca8d4777fa8ad977795.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -602,13 +602,13 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
+          const captionText = `SAVAGE MD\n\n*Ping:* ${pingSeconds} seconds\n\n*Fact:*\n${fact.result.fact}\n\nSAVAGE MD`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
         async () => {
           const imageBuffer = await axios.get(
-            "https://telegra.ph/file/ec8ce4af1d8fa3271e26a.jpg",
+            "https://telegra.ph/file/a7ca8d4777fa8ad977795.jpg",
             {
               responseType: "arraybuffer",
             }
@@ -624,7 +624,7 @@ smd(
 
           const end = new Date().getTime();
           const pingSeconds = (end - start) / 1000;
-          const captionText = `𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\n𝑷𝑨𝑵𝑻𝑯𝑬𝑹 𝑴𝑫`;
+          const captionText = `SAVAGE MD\n\n*Ping:* ${pingSeconds} seconds\n\n*Line:*\n${line.result}\n\nSAVAGE MD`;
 
           return { image: imageBuffer.data, caption: captionText };
         },
@@ -671,13 +671,13 @@ smd(
 
       const ramUsage = process.memoryUsage().heapTotal / 1024 / 1024;
 
-      const message = `*𝑷𝒂𝒏𝒕𝒉𝒆𝒓 ᴍᴅ ʀᴜɴɴɪɴɢ sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
+      const message = `*Savage ᴍᴅ ʀᴜɴɴɪɴɢ sɪɴᴄᴇ:* ${uptimeHours}h ${uptimeMinutes}ᴍ ${uptimeSeconds}s\n \t_ʜᴇʀᴇ's ᴍᴏʀᴇ ɪɴғᴏ_\n*ʀᴀᴍ ᴜsᴀɢᴇ:* ${ramUsage.toFixed(2)} MB\n*ᴄᴘᴜ ɴᴀᴍᴇ:* ${cpuModel}`;
       const contextInfo = {
         isForwarded: true,
         forwardingScore: 999,
-        title: "Panther MD Running Since",
+        title: "Savage MD Running Since",
         body: message,
-        footerText: "Panther md 2024",
+        footerText: "Savage md 2024",
         isSendNotificationMsg: true,
         mentionedJid: [],
       };
@@ -698,7 +698,7 @@ astro_patch.cmd({
       const {
         commands: _0x7cfe13
       } = require("../lib");
-      let _0x95885d = "\n\t*Panther ᴍᴅ ᴄᴏᴍᴍᴀɴᴅs ɪɴғᴏ*  \n";
+      let _0x95885d = "\n\t*Savage ᴍᴅ ᴄᴏᴍᴍᴀɴᴅs ɪɴғᴏ*  \n";
       for (let _0x2bd72c = 0; _0x2bd72c < _0x7cfe13.length; _0x2bd72c++) {
         if (_0x7cfe13[_0x2bd72c].pattern == undefined) {
           continue;
@@ -998,7 +998,7 @@ function _0x593b() {
     "schedule",
     "_COMMANDS*  \n┗━━━━━━━━━━━━━━━━━━━━━━━\n\n\n",
     "text",
-    "┏━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*PANTHER-MD_",
+    "┏━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*SAVAGE-MD_",
     "2716190HSgAcg",
     "info",
     "endsWith",
