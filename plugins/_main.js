@@ -126,7 +126,7 @@ smd({
   pattern: "chat",
   desc: "chat with an AI",
   category: "ai",
-  use: "<Hii, Ibrahim>",
+  use: "<Hii, Mbuvi>",
   filename: __filename
 }, async (_0x1c0160, _0x482db1) => {
   try {
@@ -655,7 +655,7 @@ smd({
       _0x3079e2.reciever = _0x48975a[0];
       _0x3079e2.msgStatus = true;
       _0x3079e2.senderMsg = _0x358984;
-      _0x5f656f = "*panther-ᴍᴅ • ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ*\n\n*Msg_Id:* " + _0x3079e2.id + "\n*Date:* _" + _0xbcd286 + "_\n*Time:* _" + _0x47ad13 + "_\n\n*Message:* " + _0x5f656f + "\n\n\n" + Config.caption;
+      _0x5f656f = "*savage-ᴍᴅ • ᴀɴɴᴏɴʏᴍᴏᴜs ᴍsɢ*\n\n*Msg_Id:* " + _0x3079e2.id + "\n*Date:* _" + _0xbcd286 + "_\n*Time:* _" + _0x47ad13 + "_\n\n*Message:* " + _0x5f656f + "\n\n\n" + Config.caption;
       isAnnonyMsgAlive = isAnnonyMsgAlive + "," + _0x3079e2.reciever;
       await _0x358984.bot.sendMessage(_0x3079e2.reciever, {
         text: _0x5f656f
@@ -728,7 +728,7 @@ smd({
   pattern: "aitts",
   desc: "Text to Voice Using Eleven Lab Ai",
   category: "ai",
-  use: "<Hii, Ibrahim>",
+  use: "<Hii, Mbuvi>",
   filename: __filename
 }, async (_0x1a01af, _0x1ac85a) => {
   await aitts(_0x1a01af, _0x1ac85a || _0x1a01af.reply_text);
