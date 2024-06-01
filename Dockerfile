@@ -1,13 +1,13 @@
 FROM quay.io/sampandey001/secktor
 
-RUN git clone https://github.com/kingibrahimtech/Black-panther-md-x.git /root/kingibrahimtech
+RUN git clone https://github.com/cheekydavy/savage-mxd.git /root/cheekydavy
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
-RUN rm -rf /root/kingibrahimtech/node_modules
+RUN rm -rf /root/cheekydavy/node_modules
 
 # Install dependencies
-WORKDIR /root/kingibrahimtech
+WORKDIR /root/cheekydavy
 RUN npm install
 
 # Add additional Steps To Run...
