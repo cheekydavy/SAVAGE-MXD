@@ -75,8 +75,8 @@ smd(
 
 smd(
    {
-      cmdname: "panther",         
-      desc: "total Users Currently using panther",
+      cmdname: "savage",         
+      desc: "total Users Currently using savage",
    },
    async(message,text) => {
       try{
