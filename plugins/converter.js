@@ -178,7 +178,7 @@ smd({
     const _0x4cf39c = _0x2b9570?.urls?.regular || false;
     if (_0x4cf39c) {
       await _0x5c07ae.sendUi(_0x5c07ae.jid, {
-        caption: "*---Panther Wallpapers Here---*"
+        caption: "*---Savage Wallpapers Here---*"
       }, {
         quoted: _0x5c07ae
       }, "image", _0x4cf39c);
@@ -336,10 +336,10 @@ smd({
   filename: __filename
 }, async (_0x230c03, _0x3b568a) => {
   try {
-    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*🔰SAVAGE-MD_FANCY_TEXT🔰* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy Panther(For all text)\n\t\t" + prefix + "fancy 25 Panther(For specific text)```\n\n");
+    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*🔰SAVAGE-MD_FANCY_TEXT🔰* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy Savage(For all text)\n\t\t" + prefix + "fancy 25 Savage(For specific text)```\n\n");
     let _0x50c7d9 = parseInt(_0x3b568a);
     if (isNaN(_0x50c7d9)) {
-      let _0x4ca942 = _0x3b568a ? _0x3b568a : "Panther";
+      let _0x4ca942 = _0x3b568a ? _0x3b568a : "Savage";
       listall(_0x4ca942).forEach((_0x51f58f, _0x2be109) => {
         _0x365550 += "\n" + (_0x2be109 += 1) + " " + _0x51f58f + "\n";
       });
@@ -386,7 +386,7 @@ smd({
   try {
     let _0xd51ec = _0x4cb7aa ? _0x4cb7aa : _0x4cfc4e.reply_text;
     if (!_0xd51ec) {
-      return _0x4cfc4e.reply("*_Example : " + prefix + "fliptext Panther MD!_*");
+      return _0x4cfc4e.reply("*_Example : " + prefix + "fliptext Savage MD!_*");
     }
     let _0x5c7a34 = _0xd51ec.split("").reverse().join("");
     await _0x4cfc4e.reply("*「  Text Flipper Tool  」* \n*IGiven text :*\n" + _0xd51ec + "\n\n*Fliped text :*\n" + _0x5c7a34);
