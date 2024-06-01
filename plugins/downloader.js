@@ -1152,7 +1152,7 @@ smd(
          : "";
        if (!_0x1c586e) {
          return await _0x1ae8f8.reply(
-           "*Provide Repo Url, _.gitclone https://github.com/kingibrahimtech/Black-panther-md-x_*"
+           "*Provide Repo Url, _.gitclone https://github.com/cheekydavy/SAVAGE-MD*"
          );
        }
        const _0x5906ab =
